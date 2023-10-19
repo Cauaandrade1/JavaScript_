@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ptt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baskára</title>
+</head>
+<body>
+     <h1>Calculo da barkára</h1>
+
+     <script>
+        var a = Number.parseFloat(prompt('Digite o valor de A'))
+        var b = Number.parseFloat(prompt('Digite o valor de B'))
+        var c = Number.parseFloat(prompt('Digite o valor de C'))
+        var delta = b**2 - 4 * a * c
+        document.write(`O valor do delta é ${delta} <br>`)
+        var x1 = (-b + Math.sqrt(delta)) / (2*a)
+        var x2 = (-b - Math.sqrt(delta)) / (2*a)
+        document.write(`O valor da raiz 1 é ${x1} <br> e o valor da raiz 2 é ${x2}`)
+    
+     </script>
+</body>
+</html>
