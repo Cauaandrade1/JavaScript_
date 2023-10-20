@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 03</title>
+</head>
+<body>
+    <h1>Antes e depois</h1>
+    <button onclick="clicou()">
+        <p>Antecessor e Sucessor</p>
+    </button>
+    <script>
+        function clicou(){
+        var n1 = Number.parseInt(prompt("Digite um número inteiro qualquer: "))
+        var antes = n1 - 1
+        var depois = n1 + 1
+        prompt(`Antes de ${n1}, temos o número ${antes}\n Depois de ${n1}, temos o número ${depois}`)
+        }
+    </script>
+</body>
+</html>
