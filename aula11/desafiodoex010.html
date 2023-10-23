@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio do EX010</title>
+</head>
+<body>
+    <h1>Alfândega</h1>
+    <p>
+        Digite sua nacionalidade:
+        <input type="text">
+        <input type="button" value="Verificar" onclick="nacao()">
+    </p>
+    <div id="mostra">
+    </div>
+    <script>
+        function nacao(){
+            var nacionalidade = document.getElementsByTagName('input')[0]
+            var decisao = document.getElementById('mostra')
+            decisao.innerHTML= `<p>O seu país é do ${nacionalidade.value}</p>`
+            if (nacionalidade.value == 'Brasil' || nacionalidade.value == 'brasil'){
+                decisao.innerHTML += 'Você é brasileiro'
+            } else {
+                decisao.innerHTML += 'Você é estrangeiro'
+            }
+        }
+    </script>
+</body>
+</html>
