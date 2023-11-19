@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Analisador de números</h1>
+    </header>
+    <main>
+        <section>
+            <div>
+                <p>
+                    <label for="num">Número (entre 1 e 100): </label>
+                    <input type="number" name="inum" id="num">
+                    <input type="button" value="Adicionar" onclick="add()">
+                </p>    
+            </div>
+            <div>
+                <select name="ivalores" id="valores" size="10">
+                </select>
+                <p><input type="button" value="Finalizar"></p>
+            </div>
+            <div id="res">
+                
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
